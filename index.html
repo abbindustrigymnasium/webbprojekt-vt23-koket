@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ferris Wheel</title>
+    <style>
+        canvas {
+            border: 1px solid #000;
+        }
+    </style>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- <canvas id="ferris-wheel" width="1000" height="900"></canvas> -->
+    <div id="title"></div>
+    <h1>Vårtermminens Schema:</h1>
+    <div id="scheduleVT"></div>
+    <h1>Höstermminens Schema:</h1>
+    <div id="scheduleHT"></div>
+    <!-- <script>
+        const canvas = document.getElementById("ferris-wheel");
+        const ctx = canvas.getContext("2d");
+
+        // Set the center point of the Ferris wheel
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2;
+
+        // Define the radius of the Ferris wheel
+        const radius = 400;
+
+        // Define the angle of rotation
+        let angle = 0;
+
+        // Define the number of spokes on the Ferris wheel
+        const numSpokes = 18;
+
+        // Define the angle between each spoke
+        const angleBetweenSpokes = (2 * Math.PI) / numSpokes;
+
+        // Define the size of the spokes
+        const spokeWidth = 10;
+        const spokeLength = radius * 0.9;
+
+        // Define the speed of rotation
+        const rotationSpeed = 0.001;
+
+        // Define the colors of the Ferris wheel
+        const wheelColor = "#333";
+        const spokeColor = "#666";
+// Draw the Ferris wheel
+        function draw() {
+            // Clear the canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw the wheel
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+            ctx.fillStyle = wheelColor;
+            ctx.fill();
+
+            // Draw the spokes
+            for (let i = 0; i < numSpokes; i++) {
+                const spokeAngle = i * angleBetweenSpokes + angle;
+
+                ctx.beginPath();
+                ctx.moveTo(centerX, centerY);
+                ctx.lineTo(
+                    centerX + spokeLength * Math.cos(spokeAngle),
+                    centerY + spokeLength * Math.sin(spokeAngle)
+                );
+                ctx.lineWidth = spokeWidth;
+                ctx.strokeStyle = spokeColor;
+                ctx.stroke();
+            }
+
+            // Increment the angle of rotation
+            angle += rotationSpeed;
+
+            // Call requestAnimationFrame() to animate the Ferris wheel
+            requestAnimationFrame(draw);
+        }
+
+        // Start the animation
+        draw();
+    </script> -->
+    <script src="index.js"></script>
+</body>
+</html>

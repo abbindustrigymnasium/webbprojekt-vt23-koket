@@ -1,0 +1,53 @@
+/* Style the schedule container */
+#scheduleVT {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  #scheduleHT {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+  }
+
+  #title {
+    text-align: center;
+  }
+  
+  /* Style each week container */
+  .week {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Style the highlighted week */
+  .week.highlighted {
+    background-color: #333;
+    color: #f0f0f0;
+    box-shadow: 0 0 10px #333;
+  }
+  
+  /* Style the week label */
+  .week .label {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
