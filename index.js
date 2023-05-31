@@ -192,7 +192,7 @@ function getStartClassYear(date = new Date()) // function that returns the lowes
 createVTSchedule() // creating both schedules
 createHTSchedule()
 
-drawScheduleVT(weekSpanVT, orderVT, 10); // drawing both schedules
+drawScheduleVT(weekSpanVT, orderVT, weekNumber()); // drawing both schedules
 drawScheduleHT(weekSpanHT, orderHT, weekNumber());
 
 
